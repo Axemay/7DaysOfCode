@@ -5,11 +5,11 @@ const msg = `"Olá ${nome}, você tem ${idade} anos e já está aprendendo ${lin
 alert(msg);
 
 
-const sair = prompt(`"Você gosta de estudar ${linguagem}? Responda com o número 1 para SIM ou 2 para NÃO."`);
+const gosta = prompt(`"Você gosta de estudar ${linguagem}? Responda com o número 1 para SIM ou 2 para NÃO."`);
 
 
-if (sair == 1){
+if (gosta == 1){
     alert("Muito bom! Continue estudando e você terá muito sucesso.");
-} if (sair == 2) {
+} if (gosta == 2) {
     alert("Ahh que pena... Já tentou aprender outras linguagens?");
 }
