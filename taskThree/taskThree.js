@@ -24,12 +24,12 @@ if (fullstack === "S" || fullstack === "s"){
     alert(`Que ótimo, ${nome}! Continue estudando`);
 }
 
-continuar = prompt(`${nome}, tem mais alguma tecnologia que você gostaria de aprender? Informe qual ou digite n para sair.`);
+continuar = prompt(`${nome}, tem mais alguma tecnologia que você gostaria de aprender? Caso não tenha digite n para sair.`);
 
-continuar = prompt(`${nome}, tem mais alguma tecnologia que você gostaria de aprender? Informe qual ou digite n para sair.`);
 
 while (continuar != "n"){
-tecnologias.push(tecnologias);
+let novaTecnologia = prompt("Qual?")
+tecnologias.push(novaTecnologia);
 continuar = prompt(`${nome}, tem mais alguma tecnologia que você gostaria de aprender? Informe qual ou digite n para sair.`);
 
 } 
