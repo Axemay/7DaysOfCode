@@ -6,6 +6,7 @@ body {
     font-family: 'Fira Code', monospace;
     background-color: #b6deb9 ;
     position: relative;
+    font-weight: bolder;
 }
 
 .section {
@@ -13,7 +14,7 @@ body {
     left: 50%;
     padding: 15px;
     background-color: #aebfaf;
-    width: 400px;
+    width: 500px;
     height: 200px;
     justify-content: center;
     align-items: center;
@@ -29,15 +30,21 @@ body {
 .inputs {
     display: flex;
     flex-direction: row;
-    background-color: #fff;
+   
     justify-content: space-around;
     margin-bottom: 20px;
+    text-shadow:  1px 1px 2px  #ffffff;
+}
+
+.inputs .input{
+    width: 70px;
+    border-radius: 5px;
 }
 
 .buttons{
-    background-color: aquamarine;
+    
     display: flex;
-    justify-content: space-between;
+ 
     align-items: center;
     align-content: center;
     padding: 0 20px;
@@ -50,10 +57,15 @@ body {
     border-radius: 5%;
     text-align: center;
     justify-content: center;
+    margin: auto;
 }
 
 .resultado {
-    width: 50px;
-    height: 30px;
-    background-color: black;
+    width: 150px;
+    height: 50px;
+    background-color: #ffffff;
+    border: 3 solid #89998a;
+    border-radius: 5px;
+    margin: 15px auto;
+
 }
