@@ -1,40 +1,45 @@
-let numeroUm = parseInt(document.getElementById("numUm").value);
-let numeroDois =  parseInt(document.getElementById("numDois").value);
-let resultado;
+
+let numero1 = parseInt(document.getElementById('primeiroNumero').value);
+let numero2 =  parseInt(document.getElementById('segundoNumero').value);
+let resultado="";
 let retornoResultado = document.getElementById("resultado");
 
 
-function Somar() {
+function Somar(numero1, numero2) {
 
-    resultado = 1 + 3;
-    return resultado;
+    resultado = numero1 + numero2;
+    exibeResultado (resultado);
 }
 
 
 
-function Subtrair() {
+function Subtrair(numero1, numero2) {
 
-    resultado = numeroUm - numeroDois;
-    return resultado;
+    resultado = numero1 - numero2;
+    exibeResultado (resultado);
+
      
 }
 
 
 
 
- function Dividir() {
+ function Dividir(numero1, numero2) {
 
-    resultado = numeroUm / numeroDois;
-    return resultado;
+    resultado = numero1 / numero2;
+    exibeResultado (resultado);
+
                 
 }
 
 
-function Multiplicar(){
+function Multiplicar(numero1, numero2){
 
-    resultado = numeroUm * numeroDois;
-    return resultado;
+    resultado = numero1 * numero2;
+    exibeResultado (resultado);
 }
 
+function exibeResultado (){
 
 retornoResultado.innerHTML = resultado;
+}
