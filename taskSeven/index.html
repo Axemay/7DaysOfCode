@@ -13,18 +13,16 @@
         <section class="section">
             <div class="header">Calculadora #7DaysOfCode</div>
             <div class="inputs">
-                <label value="numeroUm">Primeiro Número:</label>
-                <input class="input" id="numUm" name="numeroUm" type="number">
-                <label value="numeroDois">Segundo Número:</label>
-                <input class="input" id="numDois" name="numeroDois" type="number">
+                 <input id="numUm" name="numeroUm" type="number">
+                <input id="numDois" name="numeroDois" type="number">
             </div>
             <div class="buttons">
-                <button class="button" id="somar" type="submit" onclick="Somar()">+</button>
+                <button class="button" id="somar" type="submit" onclick="Somar(resultado)">+</button>
                 <button class="button" id="subtrair" type="submit" onclick="Subtrair()">-</button>
                 <button class="button" id="dividir" type="submit" onclick="Dividir()">÷</button>
                 <button class="button" id="multiplicar" type="submit" onclick="Multiplicar()">x</button>
             </div>
-            <div id="resultado" class="resultado"></div>
+            <div class="resultado"></div>
         </section>
     </main>
   </body>

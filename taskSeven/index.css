@@ -10,7 +10,8 @@ body {
 }
 
 .section {
-    position: absolute;
+    margin: auto;
+    margin-top: 10em;
     left: 50%;
     padding: 15px;
     background-color: #aebfaf;

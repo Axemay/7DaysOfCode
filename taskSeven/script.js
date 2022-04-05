@@ -1,13 +1,18 @@
-let numeroUm = parseInt(document.getElementById("numUm").value);
-let numeroDois =  parseInt(document.getElementById("numDois").value);
-let resultado;
-let retornoResultado = document.getElementById("resultado");
+var numeroUm = parseInt(document.getElementById("numUm").value);
+var numeroDois = parseInt(document.getElementById("numDois").value);
+var resultado = "";
+
+
+function exibeResultdo (resultado){
+    var retornoResultado = document.getElementById("resultado");
+    retornoResultado.innerHTML = resultado;
+}
 
 
 function Somar() {
-
-    resultado = 1 + 3;
-    return resultado;
+    console.log(numeroUm);
+    resultado = numeroUm + numeroDois;
+    exibeResultdo(resultado);
 }
 
 
@@ -15,7 +20,7 @@ function Somar() {
 function Subtrair() {
 
     resultado = numeroUm - numeroDois;
-    return resultado;
+    exibeResultdo(resultado);
      
 }
 
@@ -25,7 +30,7 @@ function Subtrair() {
  function Dividir() {
 
     resultado = numeroUm / numeroDois;
-    return resultado;
+    exibeResultdo(resultado);
                 
 }
 
@@ -33,8 +38,6 @@ function Subtrair() {
 function Multiplicar(){
 
     resultado = numeroUm * numeroDois;
-    return resultado;
+    exibeResultdo(resultado);
 }
 
-
-retornoResultado.innerHTML = resultado;
